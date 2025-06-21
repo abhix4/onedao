@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.custom-container{
+    width:780px;
+    height: 581px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.form-control::placeholder{
+    color: rgb(173, 168, 168);
+}
+
+.form-control{
+    font-size: 14px;
+}
+
+.custom-shadow{
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.12),   /* bottom (lighter, larger blur) */
+        0 4px 24px rgba(0, 0, 0, 0.08),   /* original shadow */
+        0 0px 12px rgba(0, 0, 0, 0.06),   /* top (subtle) */
+        8px 0 24px rgba(0, 0, 0, 0.09);   /* right (lighter) */
+}
+
+.container-xxl{
+    max-width: 1440px;
+    background-color:#101010;
+}
+
+:root {
+    --offwhite-color: #dce1e7;
+    --white-color: #ffffff;
+    --basic-color: #1976D2;
+    --accent-color:"#FFFFFF99";
+    --text-color: #919191;
+    --placeholder-color: rgb(173, 168, 168);
+
+}
+
+.custom-border{
+    border-radius: 30px;
+}
+
+.selected-border{
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.top-border{
+     border-bottom-right-radius: 24px;
+}
+
+
+.bottom-border{
+     border-top-right-radius: 24px;
+}
+.main-container{
+
+    background-color:#101010;
+}
+
+.table tbody tr td {
+    border-bottom: none !important;
+}
+
+.table thead{
+    border: 1px solid #EFF0F4;
+    border-radius: 24px;
+    background-color: #F7F8FA;
+}
+
+.hover-opacity-100 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.position-relative:hover .hover-opacity-100 {
+    opacity: 1;
+}
+
+.product-card{
+    background-color: #faf8f8;
+    border: 1px solid #f5f5f5;
+}
+.product-card:hover{
+    background-color: #f4f4f4; /* Bootstrap primary color */
+ /* Optional: text color on hover */
+
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .responsive-stat {
+        width: 100% !important;
+        min-height: 180px !important;
+        padding: 1rem !important;
+    }
+}
+
