@@ -18,7 +18,7 @@ export default function ProductPage(){
                     ))}
                 </div>
 
-                  <nav aria-label="Page navigation example" className="border-top pt-3" style={{fontSize:"14px"}}>
+                  <nav aria-label="Page navigation example" className="border-top pt-3 mt-5" style={{fontSize:"14px"}}>
             <ul className="pagination justify-content-end align-items-center mb-0 gap-2">
                 {/* Text: "1-2 of items" */}
                 <p className="mb-0 me-3 fw-semibold">1-2 of items</p>

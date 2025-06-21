@@ -59,7 +59,7 @@ type DriverProps = {
 
 function Driver({ name, phone, orders, income, img }: DriverProps) {
   return (
-    <div className="d-flex justify-content-between align-items-center bg-light rounded-3  p-3 mb-2">
+    <div className="d-flex justify-content-between align-items-center bg-light rounded-3 p-2  p-md-3 mb-2">
       <div className="d-flex align-items-center gap-3">
         <img
           src={img}
@@ -73,8 +73,8 @@ function Driver({ name, phone, orders, income, img }: DriverProps) {
         </div>
       </div>
       <div className="text-end">
-        <p className="mb-0  small" style={{fontSize:"14px"}}>Orders: <span className="fw-semibold fs-5">{orders}</span></p>
-        <p className="mb-0 small" style={{fontSize:"14px"}}>Income: <span className="fw-semibold fs-5">${income}</span></p>
+        <p className="mb-0  small" style={{fontSize:"14px"}}>Orders: <span className="fw-semibold fs-6 fs-md-5">{orders}</span></p>
+        <p className="mb-0 small" style={{fontSize:"14px"}}>Income: <span className="fw-semibold fs-6 fs-md-5">${income}</span></p>
       </div>
     </div>
   );
