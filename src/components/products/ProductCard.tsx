@@ -1,8 +1,8 @@
 import iphone from '../../assets/iphone.avif'
 
-type ProductCardProps = {};
+// type ProductCardProps = {};
 
-export default function ProductCard(props: ProductCardProps) {
+export default function ProductCard() {
     return (
         <div className='p-3 rounded product-card'>
             <img
