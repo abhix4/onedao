@@ -68,13 +68,13 @@ function Driver({ name, phone, orders, income, img }: DriverProps) {
           style={{ width: "48px", height: "48px", objectFit: "cover" }}
         />
         <div>
-          <p className="mb-0 fw-semibold">{name}</p>
+          <p className="mb-0 fw-semibold" >{name}</p>
           <p className="mb-0 text-muted" style={{fontSize:'12px'}}>{phone}</p>
         </div>
       </div>
       <div className="text-end">
-        <p className="mb-0  small">Orders: <span className="fw-semibold fs-5">{orders}</span></p>
-        <p className="mb-0 small">Income: <span className="fw-semibold fs-5">${income}</span></p>
+        <p className="mb-0  small" style={{fontSize:"14px"}}>Orders: <span className="fw-semibold fs-5">{orders}</span></p>
+        <p className="mb-0 small" style={{fontSize:"14px"}}>Income: <span className="fw-semibold fs-5">${income}</span></p>
       </div>
     </div>
   );

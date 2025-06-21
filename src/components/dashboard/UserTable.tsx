@@ -85,35 +85,35 @@ export default function UserTable() {
             </div>
 
             {/* Pagination */}
-             <nav aria-label="Page navigation example" className="border-top pt-3">
+             <nav aria-label="Page navigation example" className="border-top pt-3" style={{fontSize:"14px"}}>
             <ul className="pagination justify-content-end align-items-center mb-0 gap-2">
                 {/* Text: "1-2 of items" */}
                 <p className="mb-0 me-3 fw-semibold">1-2 of items</p>
 
                 {/* Previous button (disabled) */}
                 <li className="page-item disabled">
-                    <a className="page-link rounded" style={{ border: '1px solid #ddd', padding: '6px 12px' }}>
+                    <a className="page-link rounded" style={{ border: '1px solid #ddd', padding: '4px 12px' }}>
                         <FontAwesomeIcon icon={faChevronLeft} size="xs" />
                     </a>
                 </li>
 
                 {/* Page 1 (active) */}
                 <li className="page-item active">
-                    <a className="page-link rounded" style={{ backgroundColor: '#5B61F4', borderColor: '#5B61F4', color: '#fff' }}>
+                    <a className="page-link rounded" style={{ backgroundColor: '#5B61F4', borderColor: '#5B61F4', color: '#fff',padding: '4px 12px'  }}>
                         1
                     </a>
                 </li>
 
                 {/* Page 2 (inactive) */}
                 <li className="page-item">
-                    <a className="page-link rounded" style={{ border: '1px solid #ddd', color: '#333' }}>
+                    <a className="page-link rounded" style={{ border: '1px solid #ddd', color: '#333', padding: '4px 12px'  }}>
                         2
                     </a>
                 </li>
 
                 {/* Next button */}
                 <li className="page-item">
-                    <a className="page-link rounded" style={{ border: '1px solid #ddd', padding: '6px 12px', color: '#333' }}>
+                    <a className="page-link rounded" style={{ border: '1px solid #ddd', padding: '4px 12px', color: '#333' }}>
                         <FontAwesomeIcon icon={faChevronRight} size="xs" />
                     </a>
                 </li>

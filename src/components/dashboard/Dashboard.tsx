@@ -35,7 +35,7 @@ export default function Dashboard() {
                         />
                     </div>
                     <div>
-                        <p className="text-white mb-0 fw-bold">Abhishek</p>
+                        <p className="text-white mb-0 fw-bold" >Abhishek</p>
                         <p className=" mb-0"  style={{ color: "#919191", fontSize:"12px" }}>9128927466</p>
                     </div>
                 </div>

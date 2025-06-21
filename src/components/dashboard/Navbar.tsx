@@ -8,10 +8,9 @@ export default function Navbar(){
     return (
          <div className="d-flex justify-content-between align-items-center align-items-md-start mt-2 ">
             <div className="d-flex flex-column flex-md-row gap-2 gap-md-4  pt-4 pt-md-0 p-md-0 align-items-start align-items-md-center">
-            <div className="d-flex gap-4 align-items-center">
+            <div className="d-flex gap-1 gap-md-4 align-items-center">
             <FontAwesomeIcon icon={faBars} size="lg" onClick={() => {
                 dispatch(toggleSidebar())
-                console.log("Hi")
 
             }} className="btn cursor-pointer fs-5"/>
             <h4 className="mb-0">Good Morning, <span className="fst-italic">A</span>bhishek
