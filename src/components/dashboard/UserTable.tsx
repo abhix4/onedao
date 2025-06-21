@@ -47,7 +47,7 @@ export default function UserTable() {
     ];
 
     return (
-            <div className="container mt-4 " style={{ fontSize: "14px" }}>
+            <div className=" mt-4 px-0" style={{ fontSize: "14px" }}>
             <div className="table-s overflow-auto" style={{ borderRadius: '12px'}}>
                 <table className="table table-hover align-start mb-0 " style={{ borderRadius: '12px', overflow: 'hidden' }}>
                     <thead className="table-light fw-medium py-2" style={{ borderRadius: '6px', paddingBlock:"8px", color:"#505470" }}>
@@ -82,7 +82,16 @@ export default function UserTable() {
                         ))}
                     </tbody>
                 </table>
+             
             </div>
+
+               <div className="text-center mt-2 d-md-none">
+                    <small className="text-muted">
+                        <i className="fas fa-arrow-left me-1"></i>
+                        Scroll horizontally to see more
+                        <i className="fas fa-arrow-right ms-1"></i>
+                    </small>
+                </div>
 
             {/* Pagination */}
              <nav aria-label="Page navigation example" className="border-top pt-3" style={{fontSize:"14px"}}>
