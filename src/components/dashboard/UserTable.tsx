@@ -48,7 +48,7 @@ export default function UserTable() {
 
     return (
             <div className=" mt-4 px-0" style={{ fontSize: "14px" }}>
-            <div className="table-s overflow-auto" style={{ borderRadius: '12px'}}>
+            <div className="table-s overflow-auto d-none d-md-block" style={{ borderRadius: '12px'}}>
                 <table className="table table-hover align-start mb-0 " style={{ borderRadius: '12px', overflow: 'hidden' }}>
                     <thead className="table-light fw-medium py-2" style={{ borderRadius: '6px', paddingBlock:"8px", color:"#505470" }}>
                         <tr>
@@ -85,16 +85,46 @@ export default function UserTable() {
              
             </div>
 
-               <div className="text-center mt-2 d-md-none">
-                    <small className="text-muted">
-                        <i className="fas fa-arrow-left me-1"></i>
-                        Scroll horizontally to see more
-                        <i className="fas fa-arrow-right ms-1"></i>
-                    </small>
-                </div>
-
             {/* Pagination */}
-             <nav aria-label="Page navigation example" className="border-top pt-3" style={{fontSize:"14px"}}>
+        
+
+             <div className="d-block d-md-none mt-3">
+                <h6 className="mb-3">History</h6>
+                {data.map((row) => (
+                    <div key={row.user.name} className="bg-light mb-3 rounded-3">
+                        <div className=" p-3">
+                             <div className="d-flex align-items-center" style={{ maxWidth:"240px"}}>
+                                        <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault"/>
+                                        <img src={seirra} alt={row.user.name} className="rounded-circle me-2" width="50" height="50" />
+                                        <div>
+                                            <div className="fw-medium">{row.user.name}</div>
+                                            <small className="text-muted fw-light">{row.user.phone}</small>
+                                        </div>
+                             </div>
+                            <div className="d-flex justify-content-between align-items-start my-2">
+                                <span className="badge bg-secondary">{row.carComfort}</span>
+                                <small className="text-muted">{row.orderedTime}</small>
+                            </div>
+                            <div className="mb-2">
+                                <strong className="">From:</strong>
+                                <div className="small text-muted">{row.startLocation}</div>
+                            </div>
+                            <div className="mb-2">
+                                <strong className="">To:</strong>
+                                <div className="small text-muted">{row.finishLocation}</div>
+                            </div>
+                            <div>
+                                <span style={{color:"#24C18F", paddingBlock:'4px', paddingInline:'10px', fontSize:"10px", backgroundColor:"#24C18F1A", borderRadius:"10px"}}>{row.income}</span>
+                            </div>
+                            <div className="text-end">
+                                {/* <small className="text-muted">{row.details}</small> */}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+                 <nav aria-label="Page navigation example " className="border-top pt-3" style={{fontSize:"14px"}}>
             <ul className="pagination justify-content-end align-items-center mb-0 gap-2">
                 {/* Text: "1-2 of items" */}
                 <p className="mb-0 me-3 fw-semibold">1-2 of items</p>
@@ -127,7 +157,7 @@ export default function UserTable() {
                     </a>
                 </li>
             </ul>
-        </nav>
+            </nav>
         </div>
 
     );
