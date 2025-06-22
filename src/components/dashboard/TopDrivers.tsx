@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import driver from "../../assets/driver1.jpg"
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import driver from '../../assets/driver1.jpg';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export default function TopDrivers() {
   return (
     <div className="p-md-3 bg-white rounded-3">
       <div className="d-flex justify-content-between">
-      <h5 className="fw-bold mb-3">Top Drivers </h5>
-      <FontAwesomeIcon icon={faChevronRight} className="ms-2" size="xs"/>
+        <h5 className="fw-bold mb-3">Top Drivers </h5>
+        <FontAwesomeIcon icon={faChevronRight} className="ms-2" size="xs" />
       </div>
       <Driver
         name="Abhishek Singh"
@@ -30,7 +30,7 @@ export default function TopDrivers() {
         img={driver}
       />
 
-         <Driver
+      <Driver
         name="Abhishek Singh"
         phone="+91 9128927466"
         orders={5}
@@ -38,7 +38,14 @@ export default function TopDrivers() {
         img={driver}
       />
 
-         <Driver
+      <Driver
+        name="Abhishek Singh"
+        phone="+91 9128927466"
+        orders={5}
+        income={98}
+        img={driver}
+      />
+      <Driver
         name="Abhishek Singh"
         phone="+91 9128927466"
         orders={5}
@@ -65,16 +72,22 @@ function Driver({ name, phone, orders, income, img }: DriverProps) {
           src={img}
           alt={name}
           className="rounded"
-          style={{ width: "48px", height: "48px", objectFit: "cover" }}
+          style={{ width: '48px', height: '48px', objectFit: 'cover' }}
         />
         <div>
-          <p className="mb-0 fw-semibold" >{name}</p>
-          <p className="mb-0 text-muted" style={{fontSize:'12px'}}>{phone}</p>
+          <p className="mb-0 fw-semibold">{name}</p>
+          <p className="mb-0 text-muted" style={{ fontSize: '12px' }}>
+            {phone}
+          </p>
         </div>
       </div>
       <div className="text-end">
-        <p className="mb-0  small" style={{fontSize:"14px"}}>Orders: <span className="fw-semibold fs-6 fs-md-5">{orders}</span></p>
-        <p className="mb-0 small" style={{fontSize:"14px"}}>Income: <span className="fw-semibold fs-6 fs-md-5">${income}</span></p>
+        <p className="mb-0  small" style={{ fontSize: '14px' }}>
+          Orders: <span className="fw-semibold fs-6 fs-md-5">{orders}</span>
+        </p>
+        <p className="mb-0 small" style={{ fontSize: '14px' }}>
+          Income: <span className="fw-semibold fs-6 fs-md-5">${income}</span>
+        </p>
       </div>
     </div>
   );

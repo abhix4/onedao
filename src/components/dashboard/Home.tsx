@@ -1,9 +1,9 @@
-import Dashboard from "./Dashboard";
+import Dashboard from './Dashboard';
 
-export default function Home(){
-    return (
-        <div className="w-full min-vh-100 main-container">
-            <Dashboard/>
-        </div>
-    )
+export default function Home() {
+  return (
+    <div className="w-full min-vh-100 main-container">
+      <Dashboard />
+    </div>
+  );
 }

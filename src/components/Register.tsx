@@ -6,10 +6,7 @@ export default function Register() {
 
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
-      <div
-        className="row shadow custom-container overflow-hidden"
-     
-      >
+      <div className="row shadow custom-container overflow-hidden">
         {/* Left Image Side */}
         <div className="col-md-6 d-none d-md-block p-0 h-100">
           <img
@@ -22,12 +19,22 @@ export default function Register() {
 
         {/* Right Form Side */}
         <div className="col-md-6 bg-light d-flex flex-column justify-content-center px-5">
-          <h4 className="mb-2 fw-semibold text-center">Register to Admin Panel</h4>
-          <p className="text-muted mb-4 text-center" style={{fontSize:"14px"}}>Enter your phone number and password below</p>
+          <h4 className="mb-2 fw-semibold text-center">
+            Register to Admin Panel
+          </h4>
+          <p
+            className="text-muted mb-4 text-center"
+            style={{ fontSize: '14px' }}
+          >
+            Enter your phone number and password below
+          </p>
 
           <form>
             <div className="mb-3">
-              <label htmlFor="email" className="form-label text-uppercase small fw-semibold">
+              <label
+                htmlFor="email"
+                className="form-label text-uppercase small fw-semibold"
+              >
                 Email ID
               </label>
               <input
@@ -40,7 +47,10 @@ export default function Register() {
             </div>
 
             <div className="mb-3">
-              <label htmlFor="password" className="form-label text-uppercase small fw-semibold">
+              <label
+                htmlFor="password"
+                className="form-label text-uppercase small fw-semibold"
+              >
                 Password
               </label>
               <input
@@ -53,7 +63,10 @@ export default function Register() {
             </div>
 
             <div className="mb-3">
-              <label htmlFor="confirm-password" className="form-label text-uppercase small fw-semibold">
+              <label
+                htmlFor="confirm-password"
+                className="form-label text-uppercase small fw-semibold"
+              >
                 Confirm Password
               </label>
               <input
@@ -65,13 +78,20 @@ export default function Register() {
               />
             </div>
 
-            <button type="submit" className="btn btn-dark w-100 mt-4" >
+            <button type="submit" className="btn btn-dark w-100 mt-4">
               Register
             </button>
           </form>
 
           <p className="mt-3 text-center text-muted small">
-            Already have an account? <a href="#" className="text-dark fw-semibold" onClick={() => navigate("/login")}>Login</a>
+            Already have an account?{' '}
+            <a
+              href="#"
+              className="text-dark fw-semibold"
+              onClick={() => navigate('/login')}
+            >
+              Login
+            </a>
           </p>
         </div>
       </div>
